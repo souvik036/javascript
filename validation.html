@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormValidation</title>
+    <script>
+     FunctionValidation() {
+     var X = document.forms["myForm"]["Name"].Value;
+     var Y = document.forms["myForm"]["Roll no"].Value;
+     if ( X== "") 
+     {
+      alert("Enter your Name");
+       return false;
+     }
+     else if(Y== "")
+     { 
+     alert("Enter your roll number");
+     return false;
+
+     }
+
+     }
+
+
+    </script>
+</head>
+<body>
+
+    <form name="myForm" action="" onsubmit="return validation()" method="post">
+    Name: <input type="string" name="UserId">
+    <br>
+    Roll no : <input type="string" name="password">
+    <br>
+    <input type="submit" >
+    </form>
+</body>
+</html> 
